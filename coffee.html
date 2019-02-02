@@ -60,11 +60,25 @@
     const revenueMessage = document.querySelector("#revenue");
 
     function makeCoffee(){
-
-        const oldSrc = coffeeImage.getAttribute('src');
-        coffeeImage.setAttribute('src','static/coffee_mug.jpg');
-
+        coffeeImage.setAttribute('src', 'static/coffee_mug.jpg');
+        //coffeeImage.addEventListener('click', coffeeImage.setAttribute('src','static/coffee_machine.jpg');
     }
+
+    function displayCoffeeMachine(){
+        coffeeImage.setAttribute('src','static/coffee_machine.jpg');
+        // coffeeImage.addEventListener('click', coffeeImage.setAttribute('src', 'static/coffee_mug.jpg');
+    }
+
+    // coffeeImage.addEventListener()
+    // setTimeout(displayCoffeeMachine, 1500);
+    // setTimeout(makeCoffee, 2500);
+
+    // coffeeImage.addEventListener('click', makeCoffee);
+
+    setTimeout(displayCoffeeMachine(), 1500);
+
+    setTimeout(makeCoffee(), 2500);
+
 
 
     // use this JavaScript object in further study step
